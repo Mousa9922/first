@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/5917841979402734745_120.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row align-items-center text-center m-5">
+      <div class="col-md-6 col-12">
+        <img src="./img/anh-dong-welcome-cute-de-thuong_075923337.gif"  width="50%" alt="welcome" >
+      </div>
+      <div class="col-md-6 col-12 border border-5 border-primary">
+        <form class="row g-3 m-auto">
+          <div class="col-12">
+            <img src="./img/5917841979402734746_120.jpg" width="50%" alt="image">
+          </div>
+          <div class="col-md-6 col-12">
+            <label for="inputfirst" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="inputfirst">
+          </div>
+          <div class="col-md-6 col-12">
+            <label for="inputlast" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="inputlast">
+          </div>
+          <div class="col-md-6 col-12">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6 col-12">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="col-12">
+            <input class="btn btn-primary" type="reset" value="Reset">
+            <button type="button" class="btn btn-primary m-2" id="liveToastBtn">
+              Login
+            </button>
+            <div class="position-fixed bottom-0 end-0 p-3">
+              <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">Welcome</strong>
+                  <small> just now</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  welcome to my page </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('liveToastBtn').addEventListener('click', function() {
+        var toast = new bootstrap.Toast(document.getElementById('liveToast'));
+        toast.show();
+        setTimeout(function() {
+          window.location.href = './home.html';
+        }, 2000);
+      });
+    });
+  </script>
+</body>
+
+</html>

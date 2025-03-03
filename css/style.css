@@ -1,0 +1,48 @@
+.one{
+    background-image: url(../img/Designer.jpeg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center ;
+    color: white;
+
+    
+}
+.one1{
+    background-color: rgba(0, 0,0 , 0.5);
+    height: 100vh;
+     display: flex;
+    justify-content: center;
+    align-items: center ;
+     
+}
+h3::after{ 
+    content: "";
+    animation-name: m3afer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes m3afer{
+    0%{content: "|";}
+    10%{content: "3|"; color: blue; font-size: 50px ;}
+    20%{content: "3a|";color: red;font-size: 30px ;}
+    30%{content: "3af|"; color: red;}
+    40%{content: "3afe|"; color: red;}
+    50%{content: "3afer|"; color: red;}
+    60%{content: "3afe|"; color: red;}
+    70%{content: "3af|"; color: red;}
+    80%{content: "3a|"; color: red;}
+    90%{content: "3|"; color: blue;}
+    100%{content: "|"; color: red;}
+} 
+h2{
+    display: inline;
+}
+ .para{
+    text-align: center;
+    align-items: center;
+ }
+ .pos{
+    background-color: black;
+    align-items: center center;
+ }
